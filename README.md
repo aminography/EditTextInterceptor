@@ -1,6 +1,6 @@
 # `EditTextInterceptor` :zap:
 
-**`EditTextInterceptor`** is a tool which is watching text change of an `EditText` considering a delay.
+**`EditTextInterceptor`** is a tool which is watching on an `EditText` for text changes, considering a timeout.
 
 <br/>
 
