@@ -14,7 +14,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.aminography:edittext-interceptor:1.0.0'
+    implementation 'com.aminography:edittext-interceptor:1.0.1'
 }
 ```
 
