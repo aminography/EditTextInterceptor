@@ -5,9 +5,7 @@ import java.util.*
 /**
  * @author aminography
  */
-internal class TimerWatchDog(
-    private val delay: Long
-) {
+internal class TimerWatchDog(private val timeout: Long) {
 
     private var timer: Timer? = null
     private lateinit var toDoJob: (() -> Unit)
@@ -17,10 +15,8 @@ internal class TimerWatchDog(
         timer?.cancel()
         timer = Timer()
         timer?.schedule(object : TimerTask() {
-            override fun run() {
-                toDoJob.invoke()
-            }
-        }, delay)
+            override fun run() = toDoJob.invoke()
+        }, timeout)
     }
 
     internal fun cancel() = timer?.cancel()

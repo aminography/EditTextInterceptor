@@ -7,9 +7,9 @@ import android.text.TextWatcher
 /**
  * @author aminography
  */
-abstract class EditTextInterceptor(delay: Long) : TextWatcher {
+abstract class EditTextInterceptor(timeout: Long) : TextWatcher {
 
-    private val watchDog = TimerWatchDog(delay)
+    private val watchDog = TimerWatchDog(timeout)
     private val handler = Handler()
 
     abstract fun onDelayFinished(text: String?)
@@ -22,9 +22,7 @@ abstract class EditTextInterceptor(delay: Long) : TextWatcher {
 
     override fun afterTextChanged(s: Editable?) {
         watchDog.refresh {
-            handler.post {
-                onDelayFinished(s.toString())
-            }
+            handler.post { onDelayFinished(s.toString()) }
         }
     }
 
