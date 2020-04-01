@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">EditText Interceptor in Java</string>
+    <string name="type_here">Type here …</string>
+</resources>
