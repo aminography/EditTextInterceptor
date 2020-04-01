@@ -22,7 +22,7 @@ dependencies {
 
 Usage
 -----
-First of all ...
+First, ...
 
 <br/>
 
