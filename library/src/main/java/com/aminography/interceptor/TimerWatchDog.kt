@@ -8,14 +8,12 @@ import java.util.*
 internal class TimerWatchDog(private val timeout: Long) {
 
     private var timer: Timer? = null
-    private lateinit var toDoJob: (() -> Unit)
 
     internal fun refresh(job: () -> Unit) {
-        toDoJob = job
         timer?.cancel()
         timer = Timer()
         timer?.schedule(object : TimerTask() {
-            override fun run() = toDoJob.invoke()
+            override fun run() = job.invoke()
         }, timeout)
     }
 
