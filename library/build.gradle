@@ -51,14 +51,14 @@ buildscript {
 
 ext {
     bintrayRepo = 'maven'
-    bintrayName = 'EditText Interceptor'
+    bintrayName = 'EditTextInterceptor'
     orgName = 'aminography'
 
     publishedGroupId = 'com.aminography'
     artifact = 'edittext-interceptor'
     libraryVersion = "1.0.0"
 
-    libraryName = 'EditText Interceptor'
+    libraryName = 'EditTextInterceptor'
     libraryDescription = 'EditText Interceptor is a tool which is watching text change of an EditText considering a delay.'
 
     siteUrl = 'https://github.com/aminography/EditTextInterceptor'

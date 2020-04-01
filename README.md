@@ -1,5 +1,38 @@
 # `EditTextInterceptor` :zap:
 
+**`EditTextInterceptor`** is a tool which is watching text change of an `EditText` considering a delay.
+
+<br/>
+
+Download
+--------
+**`EditTextInterceptor`** is available on [bintray](https://bintray.com/aminography/maven/EditTextInterceptor) to download using build tools systems. Add the following lines to your `build.gradle` file:
+
+```gradle
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'com.aminography:edittext-interceptor:1.0.0'
+}
+```
+
+<br/>
+
+Usage
+-----
+First of all ...
+
+<br/>
+
+Change Log
+----------
+### Version 1.0.0
+- Initial Release.
+
+<br/>
+
 License
 --------
 ```
@@ -17,4 +50,3 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
-
