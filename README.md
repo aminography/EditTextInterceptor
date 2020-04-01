@@ -1,6 +1,6 @@
 # `EditTextInterceptor` :zap:
 
-**`EditTextInterceptor`** is a `TextWatcher` watching on `EditText` changes, considering a timeout to notify.
+**`EditTextInterceptor`** is a `TextWatcher` watching on `EditText` changes, considering a breakable timeout to notify.
 
 <br/>
 
