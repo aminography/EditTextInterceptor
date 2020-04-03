@@ -33,10 +33,9 @@ dependencies {
 
 Usage
 -----
-As an instance of **`EditTextInterceptor`** is a `TextWatcher` too, simply pass it to `EditText.addTextChangedListener()`.
+As an instance of **`EditTextInterceptor`** is a `TextWatcher` too, simply pass it to the `EditText.addTextChangedListener()`.
 
 ```kotlin
-// 
 // Defining intercept timeout to 500ms
 editText.addTextChangedListener(object : EditTextInterceptor(500) {
     override fun onInterceptText(text: String, isTyping: Boolean) {
