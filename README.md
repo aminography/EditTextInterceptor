@@ -1,4 +1,6 @@
 # `EditText Interceptor` :zap:
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-EditTextInterceptor-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/?)
+[![Download](https://api.bintray.com/packages/aminography/maven/EditTextInterceptor/images/download.svg) ](https://bintray.com/aminography/maven/EditTextInterceptor/_latestVersion)
 
 **`EditTextInterceptor`** is a `TextWatcher` which intercepts on text changes considering a breakable timeout.
 Actually, it delivers text changes along with typing status.
