@@ -11,8 +11,9 @@ abstract class EditTextInterceptor(timeout: Long) : TextWatcher {
 
     private val watchDog = TimerWatchDog(timeout)
     private val handler = Handler()
+    private var stopWatching = false
 
-    abstract fun onDelayFinished(text: String?)
+    abstract fun onInterceptText(text: String, isTyping: Boolean)
 
     override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
     }
@@ -21,11 +22,21 @@ abstract class EditTextInterceptor(timeout: Long) : TextWatcher {
     }
 
     override fun afterTextChanged(s: Editable?) {
-        watchDog.refresh {
-            handler.post { onDelayFinished(s.toString()) }
+        if (!stopWatching) {
+            onInterceptText(s?.toString() ?: "", true)
+            watchDog.refresh {
+                handler.post { onInterceptText(s?.toString() ?: "", false) }
+            }
         }
     }
 
-    fun cancel() = watchDog.cancel()
+    fun stopWatching() {
+        watchDog.cancel()
+        stopWatching = true
+    }
+
+    fun resumeWatching() {
+        stopWatching = false
+    }
 
 }

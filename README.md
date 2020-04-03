@@ -2,6 +2,12 @@
 
 **`EditTextInterceptor`** is a `TextWatcher` watching on `EditText` to notify text changes considering a breakable timeout.
 
+![](static/fig1.jpg)
+
+Descriptions
+
+![](static/fig2.jpg)
+
 <br/>
 
 Download
