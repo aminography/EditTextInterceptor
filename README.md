@@ -7,7 +7,7 @@ I this way, you know when the user typing is finished.
 
 Descriptions
 
-<img src="static/fig2.jpg" width="87%">
+<img src="static/fig2.jpg" width="79%">
 
 <!--![](static/fig1.jpg)-->
 
