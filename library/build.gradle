@@ -59,7 +59,7 @@ ext {
     libraryVersion = "1.0.1"
 
     libraryName = 'EditTextInterceptor'
-    libraryDescription = 'EditTextInterceptor is a TextWatcher watching on EditText to notify text changes considering a breakable timeout.'
+    libraryDescription = 'EditTextInterceptor is a TextWatcher which delivers text changes along with typing status.'
 
     siteUrl = 'https://github.com/aminography/EditTextInterceptor'
     gitUrl = 'https://github.com/aminography/EditTextInterceptor.git'
