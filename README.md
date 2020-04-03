@@ -5,12 +5,11 @@ Actually, it delivers text changes along with typing status.
 
 Suppose you have a search box which runs a query based on user input, on the fly.
 Now, if you use an instance of `TextWatcher` to inform about text changes, the only choice is to run a query for each change.
-Using **`EditTextInterceptor`** you'll be able to run a query after finishing the user typing.
-It leads to reduce unused queries followed by performance optimization and less resource consumption.
 
 <img src="static/fig1.jpg" width="67%">
 
-Descriptions
+Using **`EditTextInterceptor`** you'll be able to run a query after finishing the user typing.
+It leads to reduce unused queries followed by performance optimization and less resource consumption.
 
 <img src="static/fig2.jpg" width="79%">
 
