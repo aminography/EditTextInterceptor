@@ -36,10 +36,10 @@ Usage
 As an instance of **`EditTextInterceptor`** is a `TextWatcher` too, simply pass it to the `EditText.addTextChangedListener()`.
 
 ```kotlin
-// Defining intercept timeout to 500ms
+// Intercept timeout is defined 500ms
 editText.addTextChangedListener(object : EditTextInterceptor(500) {
     override fun onInterceptText(text: String, isTyping: Boolean) {
-        //TODO: use [text] and [isTyping]
+        // TODO
     }
 })
 ```
