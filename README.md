@@ -1,4 +1,4 @@
-# `EditTextInterceptor` :zap:
+# `EditText Interceptor` :zap:
 
 **`EditTextInterceptor`** is a `TextWatcher` which intercepts on text changes considering a breakable timeout.
 Actually, it delivers text changes along with typing status.
