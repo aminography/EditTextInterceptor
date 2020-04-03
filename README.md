@@ -9,7 +9,7 @@ Now, if you use an instance of `TextWatcher` to inform about text changes, the o
 <img src="static/fig1.jpg" width="67%">
 
 Using **`EditTextInterceptor`** you'll be able to run a query after finishing the user typing.
-It leads to reduce unused queries followed by performance optimization and less resource consumption.
+It leads to reduce number of unused queries followed by performance optimization and less resource consumption.
 
 <img src="static/fig2.jpg" width="79%">
 
@@ -25,7 +25,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.aminography:edittext-interceptor:1.0.1'
+    implementation 'com.aminography:edittext-interceptor:1.0.2'
 }
 ```
 
@@ -33,14 +33,17 @@ dependencies {
 
 Usage
 -----
-First, ...
+As an instance of **`EditTextInterceptor`** is a `TextWatcher` too, simply pass it to `EditText.addTextChangedListener()`.
 
-<br/>
-
-Change Log
-----------
-### Version 1.0.0
-- Initial Release.
+```kotlin
+// 
+// Defining intercept timeout to 500ms
+editText.addTextChangedListener(object : EditTextInterceptor(500) {
+    override fun onInterceptText(text: String, isTyping: Boolean) {
+        //TODO: use `text` and `isTyping`
+    }
+})
+```
 
 <br/>
 

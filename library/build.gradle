@@ -9,8 +9,8 @@ android {
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 29
-        versionCode 2
-        versionName "1.0.1"
+        versionCode 3
+        versionName "1.0.2"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -56,7 +56,7 @@ ext {
 
     publishedGroupId = 'com.aminography'
     artifact = 'edittext-interceptor'
-    libraryVersion = "1.0.1"
+    libraryVersion = "1.0.2"
 
     libraryName = 'EditTextInterceptor'
     libraryDescription = 'EditTextInterceptor is a TextWatcher which delivers text changes along with typing status.'
