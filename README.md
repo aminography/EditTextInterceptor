@@ -1,12 +1,15 @@
 # `EditTextInterceptor` :zap:
 
 **`EditTextInterceptor`** is a `TextWatcher` watching on `EditText` to notify text changes considering a breakable timeout.
+I this way, you know when the user typing is finished.
 
-![](static/fig1.jpg)
+<img src="static/fig1.jpg" width="30%">
 
-Descriptions
+<!--![](static/fig1.jpg)-->
 
-![](static/fig2.jpg)
+<!--Descriptions-->
+
+<!--![](static/fig2.jpg)-->
 
 <br/>
 
